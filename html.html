@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/35bde0644f.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            background-color: black;
+            display: flex;
+            min-height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        .main-box{
+            width: 400px;
+            height: 500px;
+            background-color: rgb(58, 131, 190);
+            border: solid white 5px;
+        }
+        .input{
+            margin-top: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .input input{
+            height: 100%;
+            width: 80%;
+            font-size: 35px;
+        }
+        .list-tombol{
+            margin-top: 30px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            box-sizing: border-box;
+            flex-wrap: wrap;
+            gap: 13px;
+            row-gap: 45px;
+        }
+        .tombol{
+            height: 30px;
+            margin: 5px;
+        }
+        button{
+            width: 60px;
+            height: 60px;
+            box-shadow: aqua 5px 5px 5px 1px;
+        }
+        .number{
+            background-color: rgb(0, 255, 0);
+        }
+        .operation{
+            background-color: rgb(255, 251, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-box">
+            <div class="input">
+                <input type="text" id="display" disabled>
+            </div>
+            <div class="list-tombol">
+                <div class="tombol">
+                    <button class="number btn" value="7"><i class="fa-solid fa-7"></i></button>
+                </div> 
+                <div class="tombol">
+                    <button class="number btn" value="8"><i class="fa-solid fa-8"></i></button>
+                </div>
+                <div class="tombol">
+                    <button class="number btn" value="9"><i class="fa-solid fa-9"></i></button>
+                </div>
+                <div class="tombol">
+                    <button class="operation btn" value="*"><i class="fa-solid fa-x"></i></button>
+                </div>
+                <div class="tombol">
+                    <button class="number btn" value="4"><i class="fa-solid fa-4"></i></button>
+                </div>
+                <div class="tombol">
+                    <button class="number btn" value="5"><i class="fa-solid fa-5"></i></button>
+                </div>
+                <div class="tombol">
+                    <button class="number btn" value="6"><i class="fa-solid fa-6"></i></button>
+                </div>
+                <div class="tombol">
+                    <button class="operation btn" value="/"><i class="fa-solid fa-divide"></i></button>
+                </div>
+                <div class="tombol">
+                    <button class="number btn" value="1"><i class="fa-solid fa-1"></i></button>
+                </div>
+                <div class="tombol">
+                    <button class="number btn" value="2"><i class="fa-solid fa-2"></i></button>
+                </div>
+                <div class="tombol">
+                    <button class="number btn" value="3"><i class="fa-solid fa-3"></i></button>
+                </div>
+                <div class="tombol">
+                    <button class="operation btn" value="+"><i class="fa-solid fa-plus"></i></button>
+                </div>
+                <div class="tombol">
+                    <button class="operation btn clear" value="C"><i class="fa-solid fa-c"></i></button>
+                </div>
+                <div class="tombol">
+                    <button class="number btn" value="0"><i class="fa-solid fa-0"></i></button>
+                </div>
+                <div class="tombol">
+                    <button class="operation btn" value="="><i class="fa-solid fa-equals"></i></button>
+                </div>
+                <div class="tombol">
+                    <button class="operation btn" value="-"><i class="fa-solid fa-minus"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="java.js"></script>
+</body>
+</html>
