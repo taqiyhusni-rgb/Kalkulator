@@ -6,7 +6,7 @@ for(let i = 0; i < tombol.length; i++){
         let nilai = tombol[i].value;
         if(nilai == "="){
             if(display.value == "10+6" || display.value == "6+10"){
-            display.value = "17";
+                display.value = "17";
             }else{
                 display.value = eval(display.value);
             }
